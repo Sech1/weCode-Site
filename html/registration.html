@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>weCode</title>
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body onload="setup()">
+<div class="topbar animated fadeInLeftBig"></div>
+
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+            <div class="container">
+                <div class="navbar-header">
+
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+
+                <!-- Nav Starts -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://wecode.cs.siue.edu/#home">Home</a></li>
+                        <li><a href="https://wecode.cs.siue.edu/#about">About</a></li>
+                        <li><a href="https://wecode.cs.siue.edu/#agenda">Agenda</a></li>
+                        <li><a href="https://wecode.cs.siue.edu/#faq">FAQ</a></li>
+                        <li><a href="#apply">Apply</a></li>
+                        <li><a href="https://wecode.cs.siue.edu/#sponsors">Sponsors</a></li>
+                        <li><a href="https://wecode.cs.siue.edu/#Team">Team</a></li>
+                    </ul>
+                </div>
+                <!-- #Nav Ends -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- #Header Starts -->
+
+
+
+
+<div id="home">
+    <!-- Slider Starts -->
+    <div id="myCarousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="item active">
+                <img src="images/Engineering_Building.jpg" alt="banner">
+                <div class="carousel-caption">
+                    <div class="caption-wrapper">
+                        <div class="caption-info">
+                            <img src="images/logo.png" class="animated bounceInUp" alt="logo">
+                            <h1>Innovation, Creation, Success</h1>
+                            <p>April 21st, 2018|Presented by the SIUE Computer Science Department</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="apply"></section>
+<!-- #Item 1 -->
+
+<!-- Item 1 -->
+            <!-- #Item 1 -->
+
+            <!-- Item 1 -->
+<br>
+<br>
+<br>
+<br>
+
+<div class="form-group">
+    <div class="container" align="center">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading" align="center">weCode 2018 Registration</h2>
+            <hr class="primary">
+        </div>
+    </div>
+</div>
+
+<section class="register" id="register">
+    <div class="container" style="width: 46rem; align-content: left">
+        <form enctype="multipart/form-data" class="form-horizontal" role="form" method="POST" id="form1"
+              action="https://wecode.cs.siue.edu/php/actionIsComing.php" onsubmit="return validate()">
+
+                <!--Form start - NAME-->
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" name="firstText" placeholder="First Name" class="form-control"
+                               autofocus
+                               required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstNameError" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9" id="firstNameError">
+                    </div>
+                </div>
+                <!--Form End - NAME-->
+
+                <!--Form Start - LAST NAME-->
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" name="lastText" placeholder="Last Name" class="form-control"
+                               autofocus
+                               required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastNameError" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9" id="lastNameError">
+                    </div>
+                </div>
+                <!--Form End - LAST NAME-->
+
+            <!--Form Start - TEL-->
+            <div class="form-group">
+                <label for="telNo" class="col-sm-3 control-label">Phone Number</label>
+                <div class="col-sm-9">
+                    <input type="tel" id="telNo" name="telText" placeholder="555-555-5555" class="form-control"
+                           autofocus
+                           required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="telError">
+                </div>
+            </div>
+            <!--Form End - TEL-->
+
+                <!--Form Start - EMAIL-->
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" name="emailText" placeholder="Email" class="form-control"
+                               required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailError" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9" id="emailError">
+                    </div>
+                </div>
+                <!--Form End - Email-->
+
+            <!--Form Start - ALLERGIES-->
+            <div class="form-group">
+                <label for="allergies" class="col-sm-3 control-label">Allergies and/or dietary restrictions (vegan, etc)</label>
+                <div class="col-sm-9">
+                    <textarea id="allergies" name="allergyText" placeholder="Allergies / Dietary Restrictions" class="form-control"
+                              style="height: 75px; resize: none"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="allergyError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="allergyError">
+                </div>
+            </div>
+            <!--Form End - ALLERGIES-->
+
+            <!--Form Start - EDUCATION-->
+            <div class="form-group">
+                <label for="educational" class="col-sm-3 control-label">Educational Institution</label>
+                <div class="col-sm-9">
+                    <select id="educational" class="form-control" name="educationalSelect"
+                            onchange="showfield(this.options[this.selectedIndex].value)" required>
+                        <option value="" selected disabled>Please Select Educational Institution</option>
+                        <option value="Alton High School">Alton High School</option>
+                        <option value="Belleville East High School">Belleville East High School</option>
+                        <option value="Belleville West High School">Belleville West High School</option>
+                        <option value="Bunker Hill High School">Bunker Hill High School</option>
+                        <option value="Civic Memorial High School">Civic Memorial High School</option>
+                        <option value="Edwardsville High School">Edwardsville High School</option>
+                        <option value="Father McGivney Catholic High School">Father McGivney Catholic High School</option>
+                        <option value="Fort Zumwalt East High School">Fort Zumwalt East High School</option>
+                        <option value="Fort Zumwalt North High School">Fort Zumwalt North High School</option>
+                        <option value="Fort Zumwalt South High School">Fort Zumwalt South High School</option>
+                        <option value="Fort Zumwalt West High School">Fort Zumwalt West High School</option>
+                        <option value="Granite City High School">Granite City High School</option>
+                        <option value="Highland High School">Highland High School</option>
+                        <option value="John Burroughs School">John Burroughs School</option>
+                        <option value="Litchfield High School">Litchfield High School</option>
+                        <option value="Marquette Catholic High School">Marquette Catholic High School</option>
+                        <option value="Mascoutah Community High School">Mascoutah Community High School</option>
+                        <option value="McCluer High School">McCluer High School</option>
+                        <option value="OFallon Township High School">O'Fallon Township High School</option>
+                        <option value="Stanton Public School">Stanton Public School</option>
+                        <option value="Triad High School">Triad High School</option>
+                        <option value="Waterloo High School">Waterloo High School</option>
+                        <option value="Webster Groves High School">Webster Groves High School</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="eduError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="eduError">
+                </div>
+            </div>
+            <!--Form End - EDUCATION-->
+
+            <!--Form Start - GENDER-->
+            <div class="form-group">
+                <label class="control-label col-sm-3">Gender</label>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="gender" id="femaleRadio" value="Female" required>Female
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="gender" id="maleRadio" value="Male" required>Male
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="gender" id="unknownRadio" value="Other" required>Other
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="gender" id="notRadio" value="NotStated" required>Prefer Not to
+                                Say
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+
+            <div class="form-group">
+                <label for="genderError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-6" id="genderError">
+                </div>
+            </div>
+            <!--Form End - GENDER-->
+
+            <!--Form Start - TSHIRT-->
+            <div class="form-group">
+                <label class="control-label col-sm-3">T-Shirt Size</label>
+                <div class="col-sm-9">
+                    <div class="row">
+                    <div class="checkbox">
+                        <label>
+                            <input type="radio" name="shirtSize" id="smallCheckbox" value="S" required>S
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="radio" name="shirtSize" id="mediumCheckbox" value="M" required>M
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="radio" name="shirtSize" id="largeCheckbox" value="L" required>L
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="radio" name="shirtSize" id="xtraLargeCheckbox" value="XL" required>XL
+                        </label>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="shirtError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="shirtError">
+                </div>
+            </div>
+            <!--Form End - TSHIRT-->
+
+            <!--Form Start - CODEBEBEFORE-->
+            <div class="form-group">
+                <label class="control-label col-sm-3">Do you have any coding experience</label>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="coding" id="yesCodeRadio" value="Yes" required>Yes
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="coding" id="noCodeRadio" value="No" required>No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+
+            <div class="form-group">
+                <label for="genderError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-6" id="codeError">
+                </div>
+            </div>
+            <!--Form End - CODEBEFORE-->
+
+            <!--Form Start - FILE_UPLOAD-->
+            <div class="form-group">
+                <label for="fileUpload" class="col-sm-3 control-label">Permission Form</label>
+                <div class="col-sm-9" id="fileDiv">
+                    <input style="background-color: #00a9c6;" id='buttonid' type='button' value='Upload Permission Form (.pdf, .docx, etc)'/>
+                    <br>
+                    <br>
+                    <span>File:</span><b><span id="fileName" style="width: 100%; height: 100%; font-style: italic;">
+                    </span></b>
+                    <hr>
+                    <br>
+                    <p>If you wish to partcipate in weCode you must either upload a permission form (.pdf) or print and bring
+                        a signed permission form on the day of the event. <b>Students without a permission form will not be allowed to
+                            participate. <br><br>If you choose to upload a signed permission form please
+                            use Adobe PDF format</b><br><br>Permission forms can be found
+                        <a href="documents/weCode_Waiver_Form.pdf" target="_blank">here.</a></p>
+                    <hr>
+                </div>
+            </div>
+            <input type="file" id="fileUpload" name="resumeUpload" style="display:none"/>
+
+            <div class="form-group">
+                <label for="fileError" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="fileError">
+                </div>
+            </div>
+            <!--Form End - FILE_UPLOAD-->
+
+            <input type="hidden" name="otherSchoolValue" value="">
+
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <button type="submit" class="btn btn-primary btn-block" onclick="return validate()">Register
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="errorSection" class="col-sm-3 control-label"></label>
+                <div class="col-sm-9" id="errorSection">
+                </div>
+            </div>
+        </form>
+        <!-- /form -->
+        <!-- ./container -->
+    </div>
+</section>
+
+<!-- jquery -->
+<script src="assets/jquery.js"></script>
+
+<!-- wow script -->
+<script src="assets/wow/wow.min.js"></script>
+
+
+<!-- boostrap -->
+<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+
+<!-- jquery mobile -->
+<script src="assets/mobile/touchSwipe.min.js"></script>
+<script src="assets/respond/respond.js"></script>
+
+<!-- gallery -->
+<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<!-- custom script -->
+<script src="assets/script.js"></script>
+<script src="js/registrationJS.js"></script>
+</body>
+</html>
